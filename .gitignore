@@ -1,0 +1,13 @@
+.DS_Store
+Eclipse SmartHome Designer.app/
+configurations.zip
+distribution-1.6.2-addons.zip
+distribution-1.6.2-demo-configuration.zip
+distribution-1.6.2-runtime.zip
+distribution-1.6.2-runtime/
+distribution-2.0.0-alpha1-minimal-runtime.zip
+distribution-2.0.0-alpha1-minimal-runtime/
+distribution-2.0.0-alpha1-runtime.zip
+distribution-2.0.0-alpha1-runtime/
+openHAB Designer.app/
+configurations/users.cfg

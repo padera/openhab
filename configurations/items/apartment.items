@@ -1,0 +1,18 @@
+Group All
+Group Weather 	(All)
+Group Status 	(All)
+
+Group Weather_Chart													(Weather)
+Number Weather_Temperature 		"Outside Temperature [%.1f °C]"	<temperature> (Weather_Chart) {weather="locationId=seattle, type=temperature, property=current"}
+Number Weather_Humidity 		"Outside Humidity [%.1f %%]"	<temperature> (Weather) {weather="locationId=seattle, type=athmosphere, property=humidity"}
+Number Weather_Humidex			"Humidex [SCALE(humidex.scale):%s]" 			(Weather)
+Number Weather_Temp_Max 		"Todays Maximum [%.1f °C]"	<temperature> (Weather_Chart)
+Number Weather_Temp_Min 		"Todays Minimum [%.1f °C]"	<temperature> (Weather_Chart)
+Number Weather_Chart_Period		"Chart Period"
+DateTime Weather_LastUpdate		"Last Update [%1$ta %1$tR]"	<clock>
+
+/* NTP binding demo item */
+DateTime		Date			"Date [%1$tA, %1$td.%1$tm.%1$tY]"	<calendar>	{ ntp="America/Los_Angeles:en_US" }
+
+String UnknownDevices    "Unknown Devices in Range: [%s]" { bluetooth="?" }
+Number NoOfPairedDevices "Paired Devices in Range: [%d]"  { bluetooth="!" }
